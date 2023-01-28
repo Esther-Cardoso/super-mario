@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
   <title>Super Mario Bros - O Filme</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +20,6 @@
 
 <body>
   <div class="fundo-video">
-    <!-- https://www.youtube.com/embed/Cb4WV4aXBpk -->
     <video class="video" autoplay loop muted> 
       <source src="./src/video/mario-trailer.mp4" type="video/mp4"> 
     </video>
@@ -28,8 +31,8 @@
     </a>
     <nav>
       <ul class="menu">
-        <li>Home</li>
-        <li>Detalhes</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Detalhes</a></li>
       </ul>
     </nav>
   </header>
@@ -41,6 +44,13 @@
       <button class="botao-trailer">Veja o trailer</button>
     </div>
     <img class="mario" src="./src/img/super-mario-chars.png" alt="Personagens do super mario">
+
+    <div class="modal">
+      <div class="conteudo-modal">
+        <span class="fechar-modal">X</span>
+        <iframe id="video" src="https://www.youtube.com/embed/Cb4WV4aXBpk" width="560" height="315" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; fyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </main>
 </body>
 
